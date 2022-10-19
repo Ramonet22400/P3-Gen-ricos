@@ -5,7 +5,7 @@ public class Stack<T> {
     private T data;
     private LinkedList<T> list;
 
-    //Crearemos los tres metodos creando funciones.
+    //Crearemos losmetodos creando funciones.
     public Stack() {
         this.list = new LinkedList<>();
     }
