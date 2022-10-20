@@ -10,20 +10,26 @@ public class StackArray <T>{
 
         //Crearemos los tres metodos creando funciones.
         public StackArray() {
-                this.array = (T[]) new Object[5];
+                this.array = (T[]) new Object[4];
                 this.numOfItems = 0; }
 
         public boolean isEmpty() { return this.numOfItems == 0; }
 
         public void removeFirst() {
-                T value = this.array[4];
+                T value = this.array[3];
 
                 for(int i= 0; i<this.array.length-1; i++)
                         this.array[i] = this.array[i+1];
         }
         //public T getFirst() {}
         public void addFirst(T item) {
-                this.array[4] = item;
+                array[0] = item;
+                for(int i= 0; i>0; i--){
+                        array[i] = array[i-1];
+                        array[i]= item;
+                }
+
+
         }
         public String toString() {
 
