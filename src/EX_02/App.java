@@ -26,6 +26,7 @@ public class App {
         array.addFirst("Ramon") ;
         array.addFirst("Nil");
         array.addFirst("Sergio");
+        array.addFirst("Crsitian");
 
         System.out.println("Contenido de la lista: " + array.toString());
 
@@ -35,12 +36,12 @@ public class App {
         System.out.println("Eliminamos el primer valor que contiene la lista: "+array.toString());
 
         //Añadiremos un nuevo valor al inicio de la lista.
-        StackArray.addFirst("Abadal");
-        //System.out.println("La lista quedaria tal que así: "+);
+        array.addFirst("Abadal");
+        System.out.println("Añadimos un valor a la primera posición de la lista:"+array);
 
         //Finalmente escribiriamos la lista
-
-        System.out.println(toString);
+        String string = array.toString();
+        System.out.println("Pasaremos el array a String"+ string);
 
     }
 }
