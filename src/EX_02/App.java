@@ -22,28 +22,24 @@ public class App {
         System.out.println();
 
         //Añadiremos nuevos valores a la lista.
-        array.addFirst("hola") ;
+        array.addFirst("Ramon") ;
         array.addFirst("Nil");
         array.addFirst("Sergio");
 
-        System.out.println("Contenido de la lista: "+);
+        System.out.println("Contenido de la lista: " + array.toString());
 
         //Extraemos el primer elemento de la lista.
-        StackArray.();
+        array.removeFirst();
+
+        System.out.println(array.toString());
 
         //Y luego eliminamos este primer valor de la lista.
-        StackArray.();
+        //StackArray.removeFirst();
 
         //Añadiremos un nuevo valor al inicio de la lista.
-        StackArray.("Abadal");
-        System.out.println("La lista quedaria tal que así: "+);
-
-    }
-
-
-
-
-
+        //StackArray.("Abadal");
+        //System.out.println("La lista quedaria tal que así: "+);
 
     }
 }
+
