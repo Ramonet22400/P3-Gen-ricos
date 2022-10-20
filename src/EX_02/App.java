@@ -8,13 +8,13 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args){
 
-        StackArray<Array> array = new StackArray<>();
+        StackArray<String> array = new StackArray<>();
 
         System.out.println();
         //Crearemos la ArrayList que contendra los valore que pasaremos a los metodos.
         System.out.println("Hay contenido en la lista?");
 
-        if (ArrayList.isEmpty() == true ){
+        if (array.isEmpty() == true ){
             System.out.println("La lista esta vacia.");
         }else{
             System.out.println("La lista tiene contenido.");
@@ -22,21 +22,21 @@ public class App {
         System.out.println();
 
         //Añadiremos nuevos valores a la lista.
-        ArrayList.addFirst("Ramonet");
-        ArrayList.addFirst("Nil");
-        ArrayList.addFirst("Sergio");
+        array.addFirst("hola") ;
+        array.addFirst("Nil");
+        array.addFirst("Sergio");
 
-        System.out.println("Contenido de la lista: "+StackArray);
+        System.out.println("Contenido de la lista: "+);
 
         //Extraemos el primer elemento de la lista.
-        StackArray.getFirst();
+        StackArray.();
 
         //Y luego eliminamos este primer valor de la lista.
-        StackArray.removeFirst();
+        StackArray.();
 
         //Añadiremos un nuevo valor al inicio de la lista.
-        StackArray.addFirst("Abadal");
-        System.out.println("La lista quedaria tal que así: "+StackArray);
+        StackArray.("Abadal");
+        System.out.println("La lista quedaria tal que así: "+);
 
     }
 

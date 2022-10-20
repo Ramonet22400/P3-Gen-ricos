@@ -3,13 +3,18 @@ import java.util.ArrayList;
 
 public class StackArray <T>{
         private T data;
-        private ArrayList<T> Array;
+        private T array[];
+        private int numOfItems;
+
 
         //Crearemos los tres metodos creando funciones.
-        public StackArray() {this.Array = new ArrayList<>();}
-        public boolean isEmpty() {return this.Array.isEmpty();}
-        public void removeFirst() {this.Array.remove(0);}
-        public T getFirst() {return this.Array.get(0);}
-        public void addFirst(T item) {this.Array.add(0, (T) "BMW");}
-        public String toString() {return this.Array.toString();}
+        public StackArray() {
+                this.array = (T[]) new Object[5];
+                this.numOfItems = 0; }
+
+        public boolean isEmpty() {return this.array.isEmpty();}
+        public void removeFirst() {this.array.remove(0);}
+        public T getFirst() {return this.array.get(0);}
+        public void addFirst(T item) {this.array.add(0, item);}
+        public String toString() {return this.array.toString();}
     }
