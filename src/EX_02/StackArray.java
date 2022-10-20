@@ -22,14 +22,12 @@ public class StackArray <T>{
                         this.array[i] = this.array[i+1];
         }
         //public T getFirst() {}
-        public void addFirst(T item) {
-                array[0] = item;
-                for(int i= 0; i>0; i--){
-                        array[i] = array[i-1];
-                        array[i]= item;
-                }
+        public void addFirst() {
 
+                T value = (T) this.array;
 
+                for(int i= 0; i<this.array.length-1; i++)
+                        this.array[i] = this.array[i+1];
         }
         public String toString() {
 
