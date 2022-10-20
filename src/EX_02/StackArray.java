@@ -12,16 +12,10 @@ public class StackArray <T>{
                 this.array = (T[]) new Object[5];
                 this.numOfItems = 0; }
 
-        public boolean isEmpty() {
+        public boolean isEmpty() { return this.numOfItems == 0; }
 
-                return this.numOfItems == 0;
-        }
-
-        public void removeFirst() {
-
-
-        }
-        public T getFirst() {return this.array.get(0);}
-        public void addFirst(T item) {this.array.add(0, item);}
-        public String toString() {return this.array.toString();}
+        public void removeFirst() { }
+        public T getFirst() {}
+        public void addFirst(T item) {}
+        public String toString() {}
     }
